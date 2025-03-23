@@ -3,95 +3,157 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Un ejemplo de página HTML bien estructurada con buenas prácticas de SEO y accesibilidad." />
-    <meta name="keywords" content="HTML, SEO, desarrollo web, accesibilidad, multimedia" />
-    <meta name="author" content="Tu Nombre" />
+    <meta
+      name="description"
+      content="Un ejemplo de página HTML bien estructurada con buenas prácticas de SEO y accesibilidad."
+    />
+    <meta
+      name="keywords"
+      content="HTML, SEO, desarrollo web, accesibilidad, multimedia"
+    />
+    <meta name="author" content="Jennifer Contreras" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Guía Completa de HTML con Buenas Prácticas de SEO</title>
+    <title>Mi Página Web</title>
   </head>
   <body>
     <header class="head" role="banner">
-      <h1 itemprop="name">Encabezado Principal: Guía Completa de HTML</h1>
+      <h1 itemprop="name">Bienvenidos a Mi Página Web</h1>
     </header>
     <main role="main">
       <nav class="nav_bar" role="navigation" aria-label="Navegación principal">
         <ul>
-          <li><a href="#basica" aria-label="Ir a la sección Estructura Básica">Estructura Básica</a></li>
-          <li><a href="#multimedia" aria-label="Ir a la sección Multimedia">Multimedia</a></li>
-          <li><a href="#formulario" aria-label="Ir a la sección Formulario">Formulario</a></li>
+          <li>
+            <a href="#inicio" aria-label="Ir a la sección Inicio">Inicio</a>
+          </li>
+          <li>
+            <a
+              href="#sobre-nosotros"
+              aria-label="Ir a la sección Sobre Nosotros"
+              >Sobre Nosotros</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" aria-label="Ir a la sección Contacto"
+              >Contacto</a
+            >
+          </li>
         </ul>
       </nav>
 
-      <section class="estructura" id="basica" itemscope itemtype="https://schema.org/Article">
-        <div>
-          <h2 itemprop="headline">1. Estructura Básica del Documento HTML</h2>
-          <p itemprop="description">
-            Este documento HTML tiene una estructura básica que incluye la declaración de DOCTYPE, etiquetas de metadatos y un título.
-          </p>
-          <hr />
-          <h2>2. Encabezados y Propiedades del Texto</h2>
-          <h3 class="text"><b itemprop="highlight">Este es un texto en negrita.</b></h3>
-          <h4 class="text"><em itemprop="highlight">Este es un texto en cursiva.</em></h4>
-          <h5 class="text"><u itemprop="highlight">Este es un texto subrayado.</u></h5>
-        </div>
-        <div>
-          <h2>3. Divisiones y Agrupación de Contenido</h2>
-          <div>
-            <h3 class="sections">Sección 1</h3>
-            <p>Contenido de la primera sección agrupada en un div.</p>
+      <section id="inicio">
+        <h2>Introducción</h2>
+        <p>
+          Bienvenido a mi página web. Aquí encontrarás información sobre mí y
+          mis proyectos. ¡Espero que disfrutes tu visita!
+        </p>
+      </section>
+
+      <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+          ¡Hola! Soy <b>Jennifer Contreras</b>, una desarrolladora web
+          apasionada por crear sitios accesibles y modernos. Me especializo en
+          <em>HTML semántico</em>, <u>accesibilidad</u> y diseño responsivo.
+        </p>
+        <div class="desple">
+          <div class="sections">
+            <dt class="desple-toggle" title="Haz clic para expandir">Mi Historia</dt>
+            <dd class="desple-content">
+              <p>
+                Comencé mi carrera como desarrolladora web hace 5 años. Desde
+                entonces, he trabajado en proyectos de todo tipo, desde pequeños
+                blogs hasta aplicaciones empresariales.
+              </p>
+            </dd>
           </div>
-          <div>
-            <h3 class="sections">Sección 2</h3>
-            <p>Contenido de la segunda sección agrupada en un div.</p>
+          <div class="sections">
+            <dt class="desple-toggle" title="Haz clic para expandir">Mis Habilidades</dt>
+            <dd class="desple-content">
+              <p>
+                Domino tecnologías como <b>HTML</b>, <b>CSS</b>,
+                <b>JavaScript</b> y frameworks como React y Angular.
+              </p>
+            </dd>
           </div>
         </div>
       </section>
 
-      <article class="multimedia" id="multimedia" itemscope itemtype="https://schema.org/Article">
-        <h2 itemprop="headline">4. Enlaces y Listas</h2>
-      <!-- Sección de recursos externos -->
-<div>
-  <h3>Recursos Externos</h3>
-  <ul class="external-links">
-    <li><a href="https://developer.mozilla.org" target="_blank" aria-label="Visitar MDN Web Docs">MDN Web Docs</a></li>
-    <li><a href="https://www.w3schools.com" target="_blank" aria-label="Visitar W3Schools">W3Schools</a></li>
-    <li><a href="https://www.freecodecamp.org" target="_blank" aria-label="Visitar FreeCodeCamp">FreeCodeCamp</a></li>
-  </ul>
-</div>
-        <h3>Lista Desordenada</h3>
-        <div class="desor">
-          <ul class="desor">
-            <li class="desor">Primer ítem de una lista desordenada</li>
-            <li>Segundo ítem de una lista desordenada</li>
-          </ul>
-        </div>
-        <h3>Lista Ordenada</h3>
-        <div class="orde">
-          <ol class="orde">
-            <li class="orde">Primer ítem de una lista ordenada</li>
-            <li>Segundo ítem de una lista ordenada</li>
-          </ol>
-        </div>
-        <h3>Lista Desplegable</h3>
-        <div class="desple">
-          <dl>
-            <dt class="desple-toggle">Término 1</dt>
-            <dd class="desple-content">Definición 1</dd>
-            <dt class="desple-toggle">Término 2</dt>
-            <dd class="desple-content">Definición 2</dd>
-          </dl>
-        </div>
-      </article>
+      <section id="articulo-destacado">
+        <h2>Artículo Destacado</h2>
+        <p>
+          Este es un artículo destacado sobre desarrollo web. Aprende cómo crear
+          sitios web modernos y accesibles visitando estos recursos:
+        </p>
+        <ul class="external-links">
+          <li>
+            <a
+              href="https://developer.mozilla.org"
+              target="_blank"
+              aria-label="Visitar MDN Web Docs"
+              >MDN Web Docs</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.w3schools.com"
+              target="_blank"
+              aria-label="Visitar W3Schools"
+              >W3Schools</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.freecodecamp.org"
+              target="_blank"
+              aria-label="Visitar FreeCodeCamp"
+              >FreeCodeCamp</a
+            >
+          </li>
+        </ul>
+      </section>
 
-      <article class="multimedia" id="seccion2" itemscope itemtype="https://schema.org/Article">
-        <h2 itemprop="headline">5. Elementos Multimedia</h2>
-        <div>
-          <h3>Imágenes</h3>
-          <img class="image" src="/assets/1.jpg" alt="Imagen de ejemplo con un paisaje" loading="lazy" itemprop="image" />
+      <section id="galeria-de-imagenes">
+        <h2>Galería de Imágenes</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="card">
+              <img src="/assets/3.jpg" alt="Imagen de ejemplo muralla china" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/2.jpg" alt="Imagen de ejemplo con un perro" loading="lazy" />
+            </div>
+            <div class="card">
+              <img src="/assets/1.jpg" alt="Imagen de ejemplo con un gato" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/4.jpg" alt="Imagen de ejemplo anime" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/5.jpg" alt="Imagen de ejemplo sunset" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/6.jpg" alt="Imagen de ejemplo con South Korea" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/7.jpg" alt="Imagen de ejemplo con un pero y gato" loading="lazy"/>
+            </div>
+            <div class="card">
+              <img src="/assets/8.jpg" alt="Imagen de ejemplo con un cafe y libro" loading="lazy"/>
+            </div>
+          </div>
         </div>
+      </section>
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
         <div>
           <h3>Videos</h3>
-          <video controls width="400px" height="400px" aria-label="Video de ejemplo">
+          <video
+            controls
+            width="400px"
+            height="400px"
+            aria-label="Video de ejemplo"
+          >
             <source src="/assets/sea.mp4" type="video/mp4" />
           </video>
         </div>
@@ -101,41 +163,78 @@
             <source src="/assets/cat.mp3" type="audio/mpeg" />
           </audio>
         </div>
-        <h2>6. Tablas</h2>
-        <table aria-label="Tabla de ejemplo">
-          <thead>
-            <tr>
-              <th scope="col">Columna 1</th>
-              <th scope="col">Columna 2</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Dato 1</td>
-              <td>Dato 2</td>
-            </tr>
-            <tr>
-              <td>Dato 3</td>
-              <td>Dato 4</td>
-            </tr>
-          </tbody>
-        </table>
-      </article>
+      </section>
+      <section id="proyectos-recientes">
+        <h2>Proyectos Recientes</h2>
+<table aria-label="Tabla de Proyectos Recientes">
+  <thead>
+    <tr>
+      <th scope="col">Nombre del Proyecto</th>
+      <th scope="col">Tecnologías Usadas</th>
+      <th scope="col">Enlace</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Portafolio Personal</td>
+      <td>HTML, CSS, JavaScript</td>
+      <td><a href="https://example.com">Ver Proyecto</a></td>
+    </tr>
+    <tr>
+      <td>Tienda Online</td>
+      <td>React, Node.js, MongoDB</td>
+      <td><a href="https://example.com">Ver Proyecto</a></td>
+    </tr>
+  </tbody>
+</table>
+      </section>
 
-      <section class="formulario" id="formulario" itemscope itemtype="https://schema.org/WebPageElement">
-        <h3 class="formH3">7. Formularios</h3>
+      <section id="contacto">
+        <h2 class="form-title">Contacto</h2>
         <form id="contact-form" aria-label="Formulario de Contacto">
           <div>
             <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="3" />
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Ingrese su nombre"
+              required
+              minlength="3"
+            />
           </div>
           <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="example@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"/>
+            <label for="email">Correo Electrónico</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@example.com"
+              required
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            />
+          </div>
+          <div>
+            <label for="contraseña">Contraseña</label>
+            <input type="password" id="contraseña" name="contraseña" required minlength="8" placeholder="Ingrese su contraseña" />
+          </div>
+          <div>
+            <label for="motivo">Motivo de Contacto</label>
+            <select id="motivo" name="motivo" required>
+              <option value="consulta">Consulta</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="soporte">Soporte</option>
+            </select>
           </div>
           <div>
             <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" placeholder="Ingrese su mensaje" required minlength="10"></textarea>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              placeholder="Ingrese su mensaje"
+              required
+              minlength="10"
+            ></textarea>
           </div>
           <button type="submit">Enviar</button>
         </form>
@@ -143,42 +242,103 @@
     </main>
 
     <footer role="contentinfo">
-      <p>&copy; 2024 Trabajo Práctico de HTML - Todos los derechos reservados.</p>
+      <p>&copy; © 2025 Mi Página Web - Todos los derechos reservados</p>
+      <ul class="social-icons">
+        <li>
+          <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+            ><img src="/assets/facebook.png" alt="Facebook"
+          /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+            ><img src="/assets/twitter.png" alt="Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+            ><img src="/assets/instagram.png" alt="Instagram"
+          /></a>
+        </li>
+      </ul>
     </footer>
 
     <script>
-     document.addEventListener("DOMContentLoaded", () => {
-  // Desplazamiento suave
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      document.querySelector(this.getAttribute("href")).scrollIntoView({
-        behavior: "smooth",
+      document.addEventListener("DOMContentLoaded", () => {
+        // Desplazamiento suave
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({
+              behavior: "smooth",
+            });
+          });
+        });
+
+        // Envío del formulario
+        document
+          .getElementById("contact-form")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Evita el envío predeterminado
+
+            // Validar el formulario
+            if (!this.checkValidity()) {
+              alert("Por favor, completa todos los campos requeridos.");
+              return;
+            }
+
+            // Crear un objeto con los datos del formulario
+            const formData = new FormData(this);
+            const formObject = {};
+            formData.forEach((value, key) => {
+              formObject[key] = value;
+            });
+
+            // Mostrar los datos en la consola
+            console.log(formObject);
+
+            // Mostrar mensaje de éxito
+            alert("¡Formulario enviado exitosamente!");
+
+            // Limpiar el formulario
+            this.reset();
+          });
+
+        document.querySelectorAll(".desple-toggle").forEach((toggle) => {
+          toggle.addEventListener("click", () => {
+            const content = toggle.nextElementSibling;
+            content.classList.toggle("active");
+          });
+        });
+
+        const slider = document.querySelector(".slider");
+        const cards = document.querySelectorAll(".card");
+        let currentIndex = 0;
+
+        function updateSlider() {
+          // Calcula la posición para centrar la tarjeta activa
+          const cardWidth = cards[0].offsetWidth + 20; // Ancho de la tarjeta + margen
+          slider.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+
+          // Resalta la tarjeta del medio
+          cards.forEach((card, index) => {
+            if (index === currentIndex + 1) {
+              card.classList.add("active"); // Tarjeta del medio
+            } else {
+              card.classList.remove("active"); // Otras tarjetas
+            }
+          });
+        }
+
+        function nextSlide() {
+          currentIndex = (currentIndex + 1) % (cards.length - 2); // Avanza una tarjeta
+          updateSlider();
+        }
+
+        setInterval(nextSlide, 3000); // Cambia cada 3 segundos
+
+        // Inicializa el slider
+        updateSlider();
       });
-    });
-  });
-
-  // Envío del formulario
-  document.getElementById("contact-form").addEventListener("submit", function (event) {
-    event.preventDefault();
-    const formData = new FormData(this);
-    const formObject = {};
-    formData.forEach((value, key) => {
-      formObject[key] = value;
-    });
-    console.log(formObject);
-    alert("¡Formulario enviado exitosamente!");
-    this.reset();
-  });
-
-  // Lista desplegable
-  document.querySelectorAll('.desple-toggle').forEach((toggle) => {
-    toggle.addEventListener('click', () => {
-      const content = toggle.nextElementSibling;
-      content.classList.toggle('active');
-    });
-  });
-});
     </script>
   </body>
 </html>
